@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Enables app sandboxing (required for Mac App Store) -->
+    <key>com.apple.security.app-sandbox</key>
+    <true/>
+    
+    <!-- Allow reading/writing of user-selected files -->
+    <key>com.apple.security.files.user-selected.read-write</key>
+    <true/>
+    
+    <!-- Allow AppleScript execution (for macOS only) -->
+    <key>com.apple.security.automation.apple-events</key>
+    <true/>
+    
+    <!-- iOS specific entitlements -->
+    <key>com.apple.security.application-groups</key>
+    <array>
+        <string>group.com.montes.PomodoroTimer</string>
+    </array>
+</dict>
+</plist>
